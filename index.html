@@ -108,7 +108,7 @@
        2. HERO
     ══════════════════════════════════════ */
     #hero {
-      background: var(--deep);
+      background: var(--cream);
       min-height: 92vh;
       display: flex;
       flex-direction: column;
@@ -123,7 +123,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 60% 40%, rgba(45,80,22,0.45) 0%, transparent 70%);
+      background: radial-gradient(ellipse at 60% 40%, rgba(45,80,22,0.06) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-eyebrow {
@@ -132,13 +132,13 @@
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--caramel);
+      color: var(--tobacco);
       margin-bottom: 20px;
     }
     .hero-title {
       font-size: clamp(3rem, 9vw, 7rem);
       font-weight: 900;
-      color: var(--cashmere);
+      color: var(--forest);
       letter-spacing: -0.01em;
       line-height: 1.05;
       margin-bottom: 28px;
@@ -147,15 +147,15 @@
     .hero-tagline {
       font-size: clamp(1.4rem, 3.5vw, 2.2rem);
       font-weight: 300;
-      color: var(--cashmere);
-      opacity: 0.9;
+      color: var(--deep);
+      opacity: 0.85;
       margin-bottom: 48px;
       letter-spacing: 0.02em;
     }
     .hero-sub {
       font-size: 0.95rem;
-      color: var(--cashmere);
-      opacity: 0.6;
+      color: var(--tobacco);
+      opacity: 0.75;
       margin-top: 20px;
       letter-spacing: 0.06em;
     }
@@ -832,8 +832,6 @@
       <div class="service-card">
         <p class="service-tier">Starter</p>
         <h3 class="service-name">Foundation</h3>
-        <div class="service-price">$2,000</div>
-        <div class="service-period">per month</div>
         <hr class="service-divider" />
         <ul class="service-features">
           <li>12 posts per month</li>
@@ -845,12 +843,10 @@
         <a href="#contact" class="btn btn-outline">Let's Talk</a>
       </div>
 
-      <div class="service-card popular">
+      <div class="service-card">
         <div class="popular-badge">Most Popular</div>
         <p class="service-tier">Growth</p>
         <h3 class="service-name">Growth</h3>
-        <div class="service-price">$3,000</div>
-        <div class="service-period">per month</div>
         <hr class="service-divider" />
         <ul class="service-features">
           <li>20 posts per month</li>
@@ -860,14 +856,12 @@
           <li>Conversion optimization</li>
           <li>Content calendar</li>
         </ul>
-        <a href="#contact" class="btn">Let's Talk</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
       </div>
 
       <div class="service-card">
         <p class="service-tier">Director</p>
         <h3 class="service-name">Director</h3>
-        <div class="service-price">$4,500</div>
-        <div class="service-period">per month</div>
         <hr class="service-divider" />
         <ul class="service-features">
           <li>Everything in Growth</li>
@@ -941,47 +935,9 @@
     <div class="contact-inner">
       <p class="section-label">Get In Touch</p>
       <h2 class="section-title">Let's Talk</h2>
-      <p class="section-sub">Tell me about your business and I'll get back to you within 24 hours.</p>
+      <p class="section-sub">Ready to grow? Click below to connect — I'll be in touch within 24 hours.</p>
 
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-          </div>
-          <div class="form-group">
-            <label for="business">Business Name</label>
-            <input type="text" id="business" name="business" placeholder="Your business" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="service">What do you need help with?</label>
-          <select id="service" name="service" required>
-            <option value="" disabled selected>Select a service…</option>
-            <option value="social">Social Media Management</option>
-            <option value="audit">Marketing Audit</option>
-            <option value="brand">Brand Strategy</option>
-            <option value="website">Website Build</option>
-            <option value="ai-tool">Custom AI Tool</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about your goals, challenges, or questions…"></textarea>
-        </div>
-        <button type="submit" class="btn">Let's Talk</button>
-      </form>
+      <a href="YOUR_KLAVIYO_LINK" target="_blank" rel="noopener" class="btn">Let's Talk</a>
     </div>
   </section>
 
