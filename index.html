@@ -755,7 +755,7 @@
     <p class="hero-eyebrow">Boutique Marketing Services</p>
     <h1 class="hero-title">DREA<span>.</span>M<br>Services</h1>
     <p class="hero-tagline tagline">You can do anything. Not everything.</p>
-    <a href="#contact" class="btn">Download Free Starter Kit</a>
+    <button class="btn" onclick="document.getElementById('klaviyoModal').style.display='flex'">Download Free Starter Kit</button>
     <p class="hero-sub">Strategy · Content · Conversion · Zero Paid Ads</p>
   </section>
 
@@ -953,7 +953,26 @@
     </div>
   </footer>
 
+  <!-- ══ KLAVIYO MODAL ══ -->
+  <div id="klaviyoModal" style="display:none; position:fixed; inset:0; background:rgba(26,58,10,0.75); z-index:1000; align-items:center; justify-content:center; padding:20px;">
+    <div style="background:#FAF7F2; max-width:480px; width:100%; padding:48px 40px 40px; position:relative;">
+      <button onclick="document.getElementById('klaviyoModal').style.display='none'" style="position:absolute; top:14px; right:18px; background:none; border:none; font-size:1.4rem; cursor:pointer; color:#7B4F2E; line-height:1;">&times;</button>
+      <p style="font-family:'Lato',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#7B4F2E; margin-bottom:10px;">Free Resource</p>
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; color:#1A3A0A; margin-bottom:10px;">The Social Media Starter Kit</h3>
+      <p style="font-family:'Lato',sans-serif; font-size:0.9rem; color:#1C1C1C; opacity:0.7; margin-bottom:24px;">Enter your email below and I'll send it straight to your inbox.</p>
+      <div class="klaviyo-form-Uqms9L"></div>
+    </div>
+  </div>
+
+  <!-- Klaviyo script -->
+  <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Uqms9L"></script>
+
   <script>
+    // Close modal when clicking outside the box
+    document.getElementById('klaviyoModal').addEventListener('click', function(e) {
+      if (e.target === this) this.style.display = 'none';
+    });
+
     // Mobile nav toggle
     const toggle = document.getElementById('navToggle');
     const links  = document.getElementById('navLinks');
