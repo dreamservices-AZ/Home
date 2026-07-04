@@ -1,27 +1,30 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-          <loc>https://dreamservices-az.github.io/Home/</loc>
-          <lastmod>2026-07-03</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>1.0</priority>
-        </url>
+        <loc>https://dreamservices-az.github.io/Home/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
     <url>
-          <loc>https://dreamservices-az.github.io/Home/vanity-metrics.html</loc>
-          <lastmod>2026-07-03</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.8</priority>
-        </url>
+        <loc>https://dreamservices-az.github.io/Home/vanity-metrics.html</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
-          <loc>https://dreamservices-az.github.io/Home/hustle-is-not-a-strategy.html</loc>
-          <lastmod>2026-07-03</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.8</priority>
-        </url>
+        <loc>https://dreamservices-az.github.io/Home/hustle-is-not-a-strategy.html</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
-          <loc>https://dreamservices-az.github.io/Home/zero-budget-resources-index.html</loc>
-          <lastmod>2026-07-03</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.8</priority>
-        </url>
-  </urlset>
+        <loc>https://dreamservices-az.github.io/Home/zero-budget-resources-index.html</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
