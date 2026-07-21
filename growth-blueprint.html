@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Growth Blueprint | DREA.M Services</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            forest: '#2D5016',
+                            deepForest: '#1A3A0A',
+                            cashmere: '#E8D5B7',
+                            caramel: '#C68B3C',
+                            tobacco: '#7B4F2E',
+                            cream: '#FAF7F2',
+                            lightBg: '#F4EFE6'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Lato', 'sans-serif'],
+                        accent: ['Cormorant Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF7F2;
+            color: #1A3A0A;
+            font-family: 'Lato', sans-serif;
+        }
+        .font-heading { fontFamily: 'Playfair Display', serif; }
+        .font-accent { fontFamily: 'Cormorant Garamond', serif; }
+        
+        /* Custom subtle scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF7F2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C68B3C;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-900 bg-brand-cream min-h-screen flex flex-col">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-deepForest text-brand-cashmere text-xs md:text-sm py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+        <span class="bg-brand-caramel text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Founder Offer</span>
+        <span>Limited Cohort Open — Founder Pricing ($297) Available Before Increasing to $497–$697</span>
+        <a href="#pricing" class="underline hover:text-white font-semibold transition ml-1">Lock In Your Rate &rarr;</a>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-40 bg-brand-cream/95 backdrop-blur-md border-b border-brand-cashmere/40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-brand-forest rounded-lg flex items-center justify-center text-brand-cashmere font-heading font-bold text-xl shadow-md">
+                    D
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-bold text-lg text-brand-deepForest tracking-tight">DREA.M <span class="text-brand-caramel">SERVICES</span></span>
+                    <span class="text-[10px] uppercase tracking-widest text-brand-tobacco font-bold">Boutique AI-Native Marketing</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-brand-deepForest">
+                <a href="#overview" class="hover:text-brand-caramel transition">The Problem</a>
+                <a href="#proof" class="hover:text-brand-caramel transition">Data & Proof</a>
+                <a href="#pillars" class="hover:text-brand-caramel transition">What's Included</a>
+                <a href="#process" class="hover:text-brand-caramel transition">30-Day Flow</a>
+                <a href="#faq" class="hover:text-brand-caramel transition">FAQ</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="openModal()" class="bg-brand-caramel hover:bg-[#b0782f] text-white font-bold text-sm px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
+                    Get Growth Blueprint ($297)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section (Single Cohesive Paragraph & Unified Layout) -->
+        <section class="relative py-16 md:py-24 overflow-hidden border-b border-brand-cashmere/30">
+            <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#2D5016_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center space-y-8">
+                
+                <div class="inline-flex items-center gap-2 bg-brand-lightBg border border-brand-cashmere px-4 py-1.5 rounded-full text-xs font-bold text-brand-forest uppercase tracking-wider mx-auto">
+                    <i class="fa-solid fa-sparkles text-brand-caramel"></i>
+                    Your 30-Day Marketing Reset — Delivered in 7–10 Business Days
+                </div>
+
+                <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-deepForest leading-tight">
+                    Hustle Is Not A Strategy. <br>
+                    <span class="text-brand-caramel italic font-accent font-normal">Consistency Converts.</span>
+                </h1>
+
+                <!-- Single Unified Paragraph -->
+                <p class="text-lg sm:text-xl text-gray-700 font-light leading-relaxed max-w-3xl mx-auto">
+                    You have <strong class="text-brand-deepForest font-semibold">enterprise-level vision</strong> but execute it with <strong class="text-brand-deepForest font-semibold">amateur-level consistency</strong> — writing captions at midnight and facing blank page syndrome. The Growth Blueprint is a one-time 30-day strategy engagement delivered in <strong class="text-brand-forest font-bold">7–10 business days</strong> that replaces the daily grind with a custom, AI-powered system taking <strong class="text-brand-forest font-bold">less than 3 hours a week</strong> to maintain. Built on $0 required ad spend and proven copywriting frameworks (AIDA, PAS, FAB), it transforms scattered effort into a repeatable engine that generated <strong class="text-brand-deepForest font-semibold">12.9K organic views</strong> in our documented case study.
+                </p>
+
+                <!-- Key Benefits Highlights Banner -->
+                <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+                    <div class="bg-white/90 px-4 py-2.5 rounded-xl border border-brand-cashmere/80 shadow-sm flex items-center gap-2">
+                        <i class="fa-solid fa-bolt text-brand-caramel text-sm"></i>
+                        <span class="text-xs font-bold text-brand-deepForest">7–10 Business Days Turnaround</span>
+                    </div>
+                    <div class="bg-white/90 px-4 py-2.5 rounded-xl border border-brand-cashmere/80 shadow-sm flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-brand-caramel text-sm"></i>
+                        <span class="text-xs font-bold text-brand-deepForest">&lt; 3 Hours / Week Maintenance</span>
+                    </div>
+                    <div class="bg-white/90 px-4 py-2.5 rounded-xl border border-brand-cashmere/80 shadow-sm flex items-center gap-2">
+                        <i class="fa-solid fa-chart-line text-brand-caramel text-sm"></i>
+                        <span class="text-xs font-bold text-brand-deepForest">12.9K Organic Views Proof ($0 Ads)</span>
+                    </div>
+                </div>
+
+                <!-- CTA Row -->
+                <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button onclick="openModal()" class="w-full sm:w-auto bg-brand-caramel hover:bg-[#b0782f] text-white font-bold text-lg px-9 py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                        <span>Get Your Growth Blueprint ($297)</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </button>
+                    <a href="#proof" class="w-full sm:w-auto bg-white hover:bg-brand-lightBg text-brand-forest border border-brand-forest/30 font-bold text-base px-7 py-4 rounded-xl shadow-sm text-center transition">
+                        View Case Study Data
+                    </a>
+                </div>
+
+                <!-- Trust Footnote -->
+                <div class="flex items-center justify-center gap-3 text-xs text-brand-tobacco pt-1">
+                    <span class="flex items-center gap-1 text-emerald-700 font-bold"><i class="fa-solid fa-shield-check"></i> One-Time Investment</span>
+                    <span>&bull;</span>
+                    <span>No Monthly Retainer Required</span>
+                    <span>&bull;</span>
+                    <span>Yuma, AZ &amp; Nationwide</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: The Pain Points (Is This You?) -->
+        <section id="overview" class="py-16 bg-white border-b border-brand-cashmere/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs font-bold tracking-widest text-brand-caramel uppercase">CURRENT STATE DIAGNOSIS</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brand-deepForest mt-2">
+                        Is This Your Current Marketing Reality?
+                    </h2>
+                    <p class="text-gray-600 mt-3 text-base">
+                        You started your business because you're great at what you do — not to become a full-time content manager, copywriter, and algorithm chaser.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Pain Card 1 -->
+                    <div class="bg-brand-cream p-6 rounded-xl border border-brand-cashmere/80 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-red-100 text-red-700 rounded-lg flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-repeat"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-brand-deepForest mb-2">Inconsistent Posting</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Posting in short, frantic bursts when you find time, followed by weeks of silence. Hoping something sticks while algorithm momentum drops.
+                        </p>
+                    </div>
+
+                    <!-- Pain Card 2 -->
+                    <div class="bg-brand-cream p-6 rounded-xl border border-brand-cashmere/80 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-filter-circle-xmark"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-brand-deepForest mb-2">Zero Conversion Strategy</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            No defined system for turning social followers or post views into actual paying clients, lead magnet signups, or walk-in customers.
+                        </p>
+                    </div>
+
+                    <!-- Pain Card 3 -->
+                    <div class="bg-brand-cream p-6 rounded-xl border border-brand-cashmere/80 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-brain-circuit"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-brand-deepForest mb-2">Platform Confusion</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Spending hours staring at a blank screen facing "blank page syndrome" with zero clarity on which message or platform generates ROI.
+                        </p>
+                    </div>
+
+                    <!-- Pain Card 4 -->
+                    <div class="bg-brand-cream p-6 rounded-xl border border-brand-cashmere/80 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-purple-100 text-purple-700 rounded-lg flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-hat-wizard"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-brand-deepForest mb-2">Bottom of To-Do List</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Wearing far too many operational hats. Marketing gets pushed off every single week until pipeline runs dangerously cold.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Strategic Thesis Banner -->
+                <div class="mt-12 bg-brand-deepForest text-white rounded-2xl p-8 sm:p-10 shadow-xl border border-brand-cashmere text-center max-w-4xl mx-auto relative overflow-hidden">
+                    <div class="font-accent italic text-brand-cashmere text-2xl sm:text-3xl mb-2">The Core Thesis</div>
+                    <blockquote class="font-heading font-bold text-2xl sm:text-3xl leading-snug text-white max-w-2xl mx-auto">
+                        "You don't need to post more. You need a system that works while you focus on serving your clients."
+                    </blockquote>
+                    <p class="text-sm text-brand-cashmere/90 mt-4 max-w-xl mx-auto">
+                        The Growth Blueprint is a one-time, done-with-you strategy engagement where we construct your entire marketing engine in 30 days — requiring <strong>less than 3 hours a week</strong> to maintain.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Proven Data & Case Study -->
+        <section id="proof" class="py-16 bg-brand-lightBg border-b border-brand-cashmere/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-brand-caramel uppercase">DOCUMENTED CASE STUDY</span>
+                        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brand-deepForest mt-1">
+                            From Dormant To Revived: Real Data Proof
+                        </h2>
+                        <p class="text-gray-600 text-sm mt-2 max-w-2xl">
+                            <strong>Client Profile:</strong> Local business (anonymized) | <strong>Timeline:</strong> 3 Months | <strong>Ad Spend:</strong> $0. Built from scratch with zero prior momentum.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-lg font-bold text-xs">
+                        <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                        <span>100% Verifiable Meta Analytics Data</span>
+                    </div>
+                </div>
+
+                <!-- 6 Core Metric Visual Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Metric Card 1: Views -->
+                    <div class="bg-white rounded-xl p-6 border border-brand-cashmere/80 shadow-md hover:shadow-lg transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Organic Content Views</span>
+                                <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
+                                    <i class="fa-solid fa-arrow-up text-[10px]"></i> 167.9%
+                                </span>
+                            </div>
+                            <div class="font-heading font-extrabold text-4xl text-brand-deepForest">12.9K</div>
+                            <p class="text-xs text-gray-500 mt-1">Top-of-funnel reach explosion in 90 days with zero ad budget.</p>
+                        </div>
+                        
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <div class="flex items-end h-20 gap-1 pt-2">
+                                <div class="bg-sky-200 w-full h-[15%] rounded-t"></div>
+                                <div class="bg-sky-200 w-full h-[25%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[40%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[30%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[50%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[35%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[45%] rounded-t"></div>
+                                <div class="bg-sky-500 w-full h-[60%] rounded-t"></div>
+                                <div class="bg-sky-500 w-full h-[40%] rounded-t"></div>
+                                <div class="bg-brand-forest w-full h-[95%] rounded-t relative group">
+                                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-[9px] px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition">Peak</span>
+                                </div>
+                                <div class="bg-sky-400 w-full h-[50%] rounded-t"></div>
+                                <div class="bg-sky-200 w-full h-[20%] rounded-t"></div>
+                            </div>
+                            <div class="flex justify-between text-[10px] text-gray-400 mt-2">
+                                <span>Mar 31</span>
+                                <span>Apr 20</span>
+                                <span>May 20</span>
+                                <span>May 30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric Card 2: Unique Viewers -->
+                    <div class="bg-white rounded-xl p-6 border border-brand-cashmere/80 shadow-md hover:shadow-lg transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Unique Viewers</span>
+                                <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
+                                    <i class="fa-solid fa-arrow-up text-[10px]"></i> 72.7%
+                                </span>
+                            </div>
+                            <div class="font-heading font-extrabold text-4xl text-brand-deepForest">2.8K</div>
+                            <p class="text-xs text-gray-500 mt-1">70% of reach came from <strong>non-followers</strong> discovering brand for 1st time.</p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <div class="flex items-end h-20 gap-1 pt-2">
+                                <div class="bg-sky-200 w-full h-[10%] rounded-t"></div>
+                                <div class="bg-sky-200 w-full h-[20%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[35%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[25%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[40%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[30%] rounded-t"></div>
+                                <div class="bg-sky-500 w-full h-[35%] rounded-t"></div>
+                                <div class="bg-brand-forest w-full h-[90%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[45%] rounded-t"></div>
+                                <div class="bg-sky-200 w-full h-[15%] rounded-t"></div>
+                            </div>
+                            <div class="flex justify-between text-[10px] text-gray-400 mt-2">
+                                <span>Mar 31</span>
+                                <span>Apr 20</span>
+                                <span>May 20</span>
+                                <span>May 30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric Card 3: Content Interactions -->
+                    <div class="bg-white rounded-xl p-6 border border-brand-cashmere/80 shadow-md hover:shadow-lg transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Content Interactions</span>
+                                <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
+                                    <i class="fa-solid fa-arrow-up text-[10px]"></i> 221.2%
+                                </span>
+                            </div>
+                            <div class="font-heading font-extrabold text-4xl text-brand-deepForest">212</div>
+                            <p class="text-xs text-gray-500 mt-1">High engagement velocity using AIDA, PAS, and FAB frameworks.</p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <div class="flex items-end h-20 gap-1 pt-2">
+                                <div class="bg-sky-200 w-full h-[10%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[60%] rounded-t"></div>
+                                <div class="bg-sky-200 w-full h-[20%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[75%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[40%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[35%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[30%] rounded-t"></div>
+                                <div class="bg-sky-200 w-full h-[25%] rounded-t"></div>
+                                <div class="bg-sky-100 w-full h-[15%] rounded-t"></div>
+                            </div>
+                            <div class="flex justify-between text-[10px] text-gray-400 mt-2">
+                                <span>Mar 31</span>
+                                <span>Apr 20</span>
+                                <span>May 20</span>
+                                <span>May 30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric Card 4: Page Visits -->
+                    <div class="bg-white rounded-xl p-6 border border-brand-cashmere/80 shadow-md hover:shadow-lg transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Facebook Page Visits</span>
+                                <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
+                                    <i class="fa-solid fa-arrow-up text-[10px]"></i> 47.3%
+                                </span>
+                            </div>
+                            <div class="font-heading font-extrabold text-4xl text-brand-deepForest">859</div>
+                            <p class="text-xs text-gray-500 mt-1">High-intent prospects checking profile bios, highlights, and offers.</p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <div class="flex items-end h-20 gap-1 pt-2">
+                                <div class="bg-sky-200 w-full h-[20%] rounded-t"></div>
+                                <div class="bg-brand-forest w-full h-[85%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[30%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[25%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[40%] rounded-t"></div>
+                                <div class="bg-sky-200 w-full h-[15%] rounded-t"></div>
+                                <div class="bg-sky-200 w-full h-[20%] rounded-t"></div>
+                            </div>
+                            <div class="flex justify-between text-[10px] text-gray-400 mt-2">
+                                <span>Mar 31</span>
+                                <span>Apr 20</span>
+                                <span>May 20</span>
+                                <span>May 30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric Card 5: Link Clicks -->
+                    <div class="bg-white rounded-xl p-6 border border-brand-cashmere/80 shadow-md hover:shadow-lg transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Facebook Link Clicks</span>
+                                <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
+                                    <i class="fa-solid fa-arrow-up text-[10px]"></i> 100%
+                                </span>
+                            </div>
+                            <div class="font-heading font-extrabold text-4xl text-brand-deepForest">12</div>
+                            <p class="text-xs text-gray-500 mt-1">Direct conversion clicks from social post CTAs to lead funnel.</p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <div class="flex items-end h-20 gap-1 pt-2">
+                                <div class="bg-sky-100 w-full h-[5%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[35%] rounded-t"></div>
+                                <div class="bg-brand-forest w-full h-[90%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[65%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[35%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[35%] rounded-t"></div>
+                            </div>
+                            <div class="flex justify-between text-[10px] text-gray-400 mt-2">
+                                <span>Mar 31</span>
+                                <span>Apr 20</span>
+                                <span>May 20</span>
+                                <span>May 30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric Card 6: New Followers -->
+                    <div class="bg-white rounded-xl p-6 border border-brand-cashmere/80 shadow-md hover:shadow-lg transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">New Facebook Follows</span>
+                                <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
+                                    <i class="fa-solid fa-arrow-up text-[10px]"></i> 50%
+                                </span>
+                            </div>
+                            <div class="font-heading font-extrabold text-4xl text-brand-deepForest">21</div>
+                            <p class="text-xs text-gray-500 mt-1">Organic audience acquisition without paying a single dollar in ads.</p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <div class="flex items-end h-20 gap-1 pt-2">
+                                <div class="bg-sky-300 w-full h-[30%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[60%] rounded-t"></div>
+                                <div class="bg-brand-forest w-full h-[95%] rounded-t"></div>
+                                <div class="bg-sky-300 w-full h-[30%] rounded-t"></div>
+                                <div class="bg-sky-400 w-full h-[60%] rounded-t"></div>
+                            </div>
+                            <div class="flex justify-between text-[10px] text-gray-400 mt-2">
+                                <span>Mar 31</span>
+                                <span>Apr 20</span>
+                                <span>May 20</span>
+                                <span>May 30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Engine Breakdown -->
+                <div class="mt-12 bg-white rounded-2xl p-8 border border-brand-cashmere/80 shadow-lg">
+                    <h3 class="font-heading font-bold text-2xl text-brand-deepForest mb-6 text-center">
+                        The 3-Step Engine Behind The Data
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+                        <div class="bg-brand-cream p-5 rounded-xl border border-brand-cashmere/60 text-center">
+                            <div class="w-8 h-8 bg-brand-forest text-brand-cashmere font-bold rounded-full flex items-center justify-center mx-auto mb-3">1</div>
+                            <h4 class="font-bold text-brand-deepForest text-base">Pain-Point Driven Content</h4>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">Designed specifically to reach beyond existing followers and attract net-new prospective clients.</p>
+                        </div>
+                        <div class="bg-brand-cream p-5 rounded-xl border border-brand-cashmere/60 text-center">
+                            <div class="w-8 h-8 bg-brand-forest text-brand-cashmere font-bold rounded-full flex items-center justify-center mx-auto mb-3">2</div>
+                            <h4 class="font-bold text-brand-deepForest text-base">Copywriting Architecture</h4>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">Every post structured using proven frameworks (AIDA, PAS, SCQA, FAB) so messaging has purpose.</p>
+                        </div>
+                        <div class="bg-brand-cream p-5 rounded-xl border border-brand-cashmere/60 text-center">
+                            <div class="w-8 h-8 bg-brand-forest text-brand-cashmere font-bold rounded-full flex items-center justify-center mx-auto mb-3">3</div>
+                            <h4 class="font-bold text-brand-deepForest text-base">Zero-Cost Capture Hub</h4>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">Using a resourceful Facebook Group and email opt-in to capture and nurture incoming leads.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: The 4 Core Pillars of The Growth Blueprint -->
+        <section id="pillars" class="py-16 bg-white border-b border-brand-cashmere/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold tracking-widest text-brand-caramel uppercase">COMPLETE DELIVERABLES STACK</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brand-deepForest mt-1">
+                        What's Included In The Growth Blueprint
+                    </h2>
+                    <p class="text-gray-600 text-base mt-2">
+                        This is not a generic course. This is not a template pack. This is your business, your strategy, built custom and delivered in 7–10 business days.
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- Pillar 01 -->
+                    <div class="bg-brand-cream rounded-2xl p-6 sm:p-8 border border-brand-cashmere/80 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-4 border-b lg:border-b-0 lg:border-r border-brand-cashmere/60 pb-6 lg:pb-0 lg:pr-6">
+                            <span class="text-xs font-extrabold text-brand-caramel tracking-widest uppercase">PILLAR 01</span>
+                            <h3 class="font-heading text-2xl font-bold text-brand-deepForest mt-1">Deep Dive Strategic Audit</h3>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                We analyze everything across your profiles, email presence, website messaging, sales funnel, and analytics snapshot. You get a clear picture of what's working and what's costing you leads.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-check-circle text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Social Profiles Review</h4>
+                                    <p class="text-[11px] text-gray-500">Instagram &amp; Facebook bio, highlights, posting cadence, profile consistency.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-check-circle text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Website &amp; Messaging Audit</h4>
+                                    <p class="text-[11px] text-gray-500">Above-the-fold CTA clarity, mobile layout checks, value proposition alignment.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-check-circle text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Email Presence Review</h4>
+                                    <p class="text-[11px] text-gray-500">Opt-in rates, welcome sequence review, lead capture funnel gap analysis.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-check-circle text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Analytics Snapshot</h4>
+                                    <p class="text-[11px] text-gray-500">Traffic sources, engagement rate, conversion events, reach leakage diagnosis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 02 -->
+                    <div class="bg-brand-cream rounded-2xl p-6 sm:p-8 border border-brand-cashmere/80 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-4 border-b lg:border-b-0 lg:border-r border-brand-cashmere/60 pb-6 lg:pb-0 lg:pr-6">
+                            <span class="text-xs font-extrabold text-brand-caramel tracking-widest uppercase">PILLAR 02</span>
+                            <h3 class="font-heading text-2xl font-bold text-brand-deepForest mt-1">90-Day Marketing Game Plan</h3>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                A custom done-for-you roadmap mapped around 3 specific campaigns: Awareness, Nurture, and Conversion. No generic advice.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-layer-group text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">3 Campaign Themes</h4>
+                                    <p class="text-[11px] text-gray-500">Awareness, Nurture, and Conversion campaigns aligned with business goals.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-calendar-days text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">90-Day Posting Schedule</h4>
+                                    <p class="text-[11px] text-gray-500">What to post, when to post, and on which platform to maximize reach.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-pen-nib text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Copywriting Frameworks</h4>
+                                    <p class="text-[11px] text-gray-500">Caption frameworks built on AIDA, PAS, SCQA, and FAB so every post converts.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-envelope-open-text text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">5-Touch Email Nurture Outline</h4>
+                                    <p class="text-[11px] text-gray-500">Automated 5-email sequence roadmap (Welcome &rarr; Value &rarr; Soft Pitch &rarr; Offer).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 03 -->
+                    <div class="bg-brand-cream rounded-2xl p-6 sm:p-8 border border-brand-cashmere/80 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-4 border-b lg:border-b-0 lg:border-r border-brand-cashmere/60 pb-6 lg:pb-0 lg:pr-6">
+                            <span class="text-xs font-extrabold text-brand-caramel tracking-widest uppercase">PILLAR 03</span>
+                            <h3 class="font-heading text-2xl font-bold text-brand-deepForest mt-1">Quick Wins Implementation</h3>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                We don't just hand you a PDF — we implement the immediate changes that signal professionalism and capture leads right away.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-link text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Bio Link Optimization</h4>
+                                    <p class="text-[11px] text-gray-500">Streamlined bio links across Instagram, Facebook, and LinkedIn.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-star text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Portfolio / Highlight Reel Update</h4>
+                                    <p class="text-[11px] text-gray-500">Structuring social highlights to showcase client transformations and FAQs.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-filter text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Lead Magnet Funnel Setup</h4>
+                                    <p class="text-[11px] text-gray-500">Landing page + email opt-in built and configured for immediate lead capture.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-brand-cashmere/50 flex items-start gap-3">
+                                <i class="fa-solid fa-align-center text-brand-forest mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-xs text-brand-deepForest">Profile Consistency Check</h4>
+                                    <p class="text-[11px] text-gray-500">Aligning photos, handles, and bio copywriting across all public channels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 04 -->
+                    <div class="bg-brand-cream rounded-2xl p-6 sm:p-8 border border-brand-cashmere/80 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-4 border-b lg:border-b-0 lg:border-r border-brand-cashmere/60 pb-6 lg:pb-0 lg:pr-6">
+                            <span class="text-xs font-extrabold text-brand-caramel tracking-widest uppercase">PILLAR 04</span>
+                            <h3 class="font-heading text-2xl font-bold text-brand-deepForest mt-1">AI Workflow Setup</h3>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                We build two custom AI workflow tools that you keep permanently — engineered specifically for your niche and brand voice.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-5 rounded-xl border border-brand-cashmere/50">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-wand-magic-sparkles text-brand-caramel"></i>
+                                    <h4 class="font-bold text-sm text-brand-deepForest">Content Idea Generator</h4>
+                                </div>
+                                <p class="text-xs text-gray-600 leading-relaxed">Generates 10+ tailored post ideas per week in under 2 minutes, pulled directly from your brand content pillars and target client pain points.</p>
+                            </div>
+                            <div class="bg-white p-5 rounded-xl border border-brand-cashmere/50">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-chart-pie text-brand-caramel"></i>
+                                    <h4 class="font-bold text-sm text-brand-deepForest">Weekly Report Generator</h4>
+                                </div>
+                                <p class="text-xs text-gray-600 leading-relaxed">Summarizes your top metrics every week into plain English insights so you track real business growth without analytics fatigue.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bonus Banner -->
+                    <div class="bg-brand-forest text-white rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border border-brand-cashmere">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-brand-caramel rounded-full flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg text-brand-cashmere">BONUS: Video Walkthrough + 2-Week Email/DM Support</h4>
+                                <p class="text-xs text-white/80">Every delivery includes a personalized recorded video explaining every section, plus 2 weeks of direct access to answer questions as you implement.</p>
+                            </div>
+                        </div>
+                        <button onclick="openModal()" class="bg-white text-brand-forest hover:bg-brand-cashmere font-bold text-xs uppercase px-5 py-3 rounded-lg shrink-0 transition">
+                            Claim Bonus &rarr;
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Before vs After -->
+        <section class="py-16 bg-brand-lightBg border-b border-brand-cashmere/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs font-bold tracking-widest text-brand-caramel uppercase">OPERATIONAL EFFICIENCY</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brand-deepForest mt-1">
+                        The Synthesis: The 3-Hour Marketing Week
+                    </h2>
+                    <p class="text-gray-600 text-sm mt-2">
+                        How the Growth Blueprint eliminates friction and restores 17+ hours of your time every week.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-5xl mx-auto">
+                    
+                    <!-- BEFORE -->
+                    <div class="bg-red-50/60 border-2 border-red-200 rounded-2xl p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-red-200 text-red-800 text-xs font-bold px-3 py-1 rounded-full uppercase">BEFORE BLUEPRINT</span>
+                                <span class="text-red-700 font-bold text-sm">20+ Hours / Week</span>
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-red-900 mb-4">The Exhausting Grind</h3>
+                            <ul class="space-y-3 text-xs text-red-950/80">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-xmark text-red-600 mt-0.5"></i>
+                                    <span>Staring at a blank screen at 10 PM wondering what to post.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-xmark text-red-600 mt-0.5"></i>
+                                    <span>Posting randomly without copywriting frameworks or CTA logic.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-xmark text-red-600 mt-0.5"></i>
+                                    <span>Inconsistent cadence that penalties account reach by up to 82.9%.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-xmark text-red-600 mt-0.5"></i>
+                                    <span>Zero system to convert followers into email subscribers or buyers.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-red-200 text-center text-xs font-bold text-red-700">
+                            Result: Burnout, wasted effort &amp; zero predictable ROI
+                        </div>
+                    </div>
+
+                    <!-- AFTER -->
+                    <div class="bg-emerald-50/80 border-2 border-emerald-300 rounded-2xl p-8 flex flex-col justify-between shadow-md">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-emerald-200 text-emerald-900 text-xs font-bold px-3 py-1 rounded-full uppercase">AFTER BLUEPRINT</span>
+                                <span class="text-emerald-800 font-bold text-sm">&lt; 3 Hours / Week</span>
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-emerald-950 mb-4">The System-Driven Engine</h3>
+                            <div class="space-y-3 text-xs">
+                                <div class="bg-white p-3 rounded-lg border border-emerald-200 flex items-center gap-3">
+                                    <div class="w-7 h-7 bg-emerald-700 text-white font-bold rounded-full flex items-center justify-center shrink-0">H1</div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-950">Hour 1: AI Prompt Generation</h4>
+                                        <p class="text-[11px] text-gray-500">Yield 10+ custom post ideas in under 2 mins using custom AI prompt tools.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-3 rounded-lg border border-emerald-200 flex items-center gap-3">
+                                    <div class="w-7 h-7 bg-emerald-700 text-white font-bold rounded-full flex items-center justify-center shrink-0">H2</div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-950">Hour 2: Structuring &amp; Scheduling</h4>
+                                        <p class="text-[11px] text-gray-500">Format captions using AIDA/PAS frameworks &amp; schedule via Meta Suite.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-3 rounded-lg border border-emerald-200 flex items-center gap-3">
+                                    <div class="w-7 h-7 bg-emerald-700 text-white font-bold rounded-full flex items-center justify-center shrink-0">H3</div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-950">Hour 3: Engagement &amp; Review</h4>
+                                        <p class="text-[11px] text-gray-500">Community management + review weekly KPI report generator output.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-emerald-200 text-center text-xs font-bold text-emerald-800">
+                            Result: Consistent pipeline, professional brand &amp; time back
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: 30-Day Operational Process Flow -->
+        <section id="process" class="py-16 bg-white border-b border-brand-cashmere/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold tracking-widest text-brand-caramel uppercase">THE CLIENT JOURNEY</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brand-deepForest mt-1">
+                        Operational Flow: Built In 30 Days
+                    </h2>
+                    <p class="text-gray-600 text-base mt-2">
+                        How we take you from friction to a fully functioning marketing system in 5 simple steps.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <!-- Connector line (Desktop) -->
+                    <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-brand-cashmere -translate-y-1/2 z-0"></div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 relative z-10">
+                        
+                        <!-- Step 1 -->
+                        <div class="bg-brand-cream p-5 rounded-xl border border-brand-cashmere flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <div class="w-10 h-10 bg-brand-forest text-brand-cashmere font-bold text-sm rounded-full flex items-center justify-center mb-4 shadow">
+                                    01
+                                </div>
+                                <h3 class="font-bold text-sm text-brand-deepForest">Step 1: Intake Form</h3>
+                                <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                    Complete a brief Q&amp;A about your business, current marketing, goals, and target client profile.
+                                </p>
+                            </div>
+                            <span class="text-[10px] font-bold text-brand-tobacco mt-4 block">Time: 15 Mins</span>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="bg-brand-cream p-5 rounded-xl border border-brand-cashmere flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <div class="w-10 h-10 bg-brand-forest text-brand-cashmere font-bold text-sm rounded-full flex items-center justify-center mb-4 shadow">
+                                    02
+                                </div>
+                                <h3 class="font-bold text-sm text-brand-deepForest">Step 2: Strategy Call</h3>
+                                <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                    60–90 minute strategy session to align on 90-day goals and finalize Blueprint scope.
+                                </p>
+                            </div>
+                            <span class="text-[10px] font-bold text-brand-tobacco mt-4 block">Time: 60–90 Mins</span>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="bg-brand-deepForest text-white p-5 rounded-xl border-2 border-brand-caramel flex flex-col justify-between shadow-lg">
+                            <div>
+                                <div class="w-10 h-10 bg-brand-caramel text-white font-bold text-sm rounded-full flex items-center justify-center mb-4 shadow">
+                                    03
+                                </div>
+                                <h3 class="font-bold text-sm text-brand-cashmere">Step 3: We Build</h3>
+                                <p class="text-xs text-brand-cream/80 mt-2 leading-relaxed">
+                                    We build your audit, 90-day plan, quick wins, and custom AI tools. <strong>You do nothing.</strong>
+                                </p>
+                            </div>
+                            <span class="text-[10px] font-bold text-brand-caramel mt-4 block">Turnaround: 7–10 Days</span>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="bg-brand-cream p-5 rounded-xl border border-brand-cashmere flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <div class="w-10 h-10 bg-brand-forest text-brand-cashmere font-bold text-sm rounded-full flex items-center justify-center mb-4 shadow">
+                                    04
+                                </div>
+                                <h3 class="font-bold text-sm text-brand-deepForest">Step 4: Delivery Walkthrough</h3>
+                                <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                    Receive full Growth Blueprint package + recorded video explaining every step in detail.
+                                </p>
+                            </div>
+                            <span class="text-[10px] font-bold text-brand-tobacco mt-4 block">Format: Video + Assets</span>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="bg-brand-cream p-5 rounded-xl border border-brand-cashmere flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <div class="w-10 h-10 bg-brand-forest text-brand-cashmere font-bold text-sm rounded-full flex items-center justify-center mb-4 shadow">
+                                    05
+                                </div>
+                                <h3 class="font-bold text-sm text-brand-deepForest">Step 5: 2-Week Support</h3>
+                                <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                    Direct email and DM support as you begin implementing your new marketing system.
+                                </p>
+                            </div>
+                            <span class="text-[10px] font-bold text-brand-tobacco mt-4 block">Window: 14 Days</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Comparison Matrix -->
+        <section class="py-16 bg-brand-lightBg border-b border-brand-cashmere/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs font-bold tracking-widest text-brand-caramel uppercase">ALIGNMENT MATRIX</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brand-deepForest mt-1">
+                        Is The Growth Blueprint Right For You?
+                    </h2>
+                    <p class="text-gray-600 text-sm mt-2">
+                        See how The Growth Blueprint compares against traditional DIY guesswork and hiring a standard social media manager.
+                    </p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse bg-white rounded-2xl shadow-md overflow-hidden min-w-[600px]">
+                        <thead>
+                            <tr class="bg-brand-deepForest text-white text-xs font-bold uppercase tracking-wider">
+                                <th class="p-4 sm:p-6 w-1/4">Feature / Dimension</th>
+                                <th class="p-4 sm:p-6 w-1/4">DIY Guesswork</th>
+                                <th class="p-4 sm:p-6 w-1/4">Hiring Standard SMM</th>
+                                <th class="p-4 sm:p-6 w-1/4 bg-brand-forest text-brand-cashmere border-l border-brand-caramel">The Growth Blueprint</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-xs sm:text-sm">
+                            <tr>
+                                <td class="p-4 sm:p-6 font-bold text-brand-deepForest">Weekly Time Commitment</td>
+                                <td class="p-4 sm:p-6 text-red-600 font-semibold">High (15–20+ Hours)</td>
+                                <td class="p-4 sm:p-6 text-gray-600">Low (1–2 Hours)</td>
+                                <td class="p-4 sm:p-6 font-bold text-emerald-800 bg-emerald-50/50 border-l border-brand-cashmere">&lt; 3 Hours / Week</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 sm:p-6 font-bold text-brand-deepForest">Foundational Strategy</td>
+                                <td class="p-4 sm:p-6 text-gray-500">None (Trial &amp; Error)</td>
+                                <td class="p-4 sm:p-6 text-gray-500">Rarely (Handles execution only)</td>
+                                <td class="p-4 sm:p-6 font-bold text-emerald-800 bg-emerald-50/50 border-l border-brand-cashmere">100% Custom Deep-Dive Strategy</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 sm:p-6 font-bold text-brand-deepForest">Financial Commitment</td>
+                                <td class="p-4 sm:p-6 text-gray-600">$0 Cash / High Time Cost</td>
+                                <td class="p-4 sm:p-6 text-red-600 font-semibold">Expensive Retainer ($1.5k–$3k/mo)</td>
+                                <td class="p-4 sm:p-6 font-bold text-emerald-800 bg-emerald-50/50 border-l border-brand-cashmere">One-Time $297 Investment</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 sm:p-6 font-bold text-brand-deepForest">AI &amp; System Setup</td>
+                                <td class="p-4 sm:p-6 text-gray-500">Manual / Overwhelmed</td>
+                                <td class="p-4 sm:p-6 text-gray-500">Not Provided</td>
+                                <td class="p-4 sm:p-6 font-bold text-emerald-800 bg-emerald-50/50 border-l border-brand-cashmere">2 Custom AI Tools Included</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 sm:p-6 font-bold text-brand-deepForest">Long-Term Asset Ownership</td>
+                                <td class="p-4 sm:p-6 text-gray-500">None</td>
+                                <td class="p-4 sm:p-6 text-gray-500">Lost when retainer ends</td>
+                                <td class="p-4 sm:p-6 font-bold text-emerald-800 bg-emerald-50/50 border-l border-brand-cashmere">You own all systems &amp; tools 100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: FAQ -->
+        <section id="faq" class="py-16 bg-white border-b border-brand-cashmere/30">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-12">
+                    <span class="text-xs font-bold tracking-widest text-brand-caramel uppercase">CLEAR ANSWERS</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brand-deepForest mt-1">
+                        Frequently Asked Questions
+                    </h2>
+                </div>
+
+                <div class="space-y-4">
+
+                    <!-- FAQ 1 -->
+                    <div class="border border-brand-cashmere/80 rounded-xl bg-brand-cream p-5">
+                        <h3 class="font-bold text-base text-brand-deepForest flex items-center justify-between">
+                            <span>What if I don't have time to implement the plan?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-caramel text-xs"></i>
+                        </h3>
+                        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                            That's exactly what the plan is built for. The Growth Blueprint is specifically engineered to reduce your weekly marketing time to under 3 hours. And if you truly don't have bandwidth, you can seamlessly transition to our Ongoing Strategy Retainer (Tier 2) where we handle execution for you.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="border border-brand-cashmere/80 rounded-xl bg-brand-cream p-5">
+                        <h3 class="font-bold text-base text-brand-deepForest flex items-center justify-between">
+                            <span>What if my niche is very specific? Will this still work?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-caramel text-xs"></i>
+                        </h3>
+                        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                            Yes. Everything in the Growth Blueprint is built custom for your business — your audience, your offers, your brand voice. We do not use generic templates. Your audit, 90-day plan, and AI tools are all constructed from scratch around your unique niche.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="border border-brand-cashmere/80 rounded-xl bg-brand-cream p-5">
+                        <h3 class="font-bold text-base text-brand-deepForest flex items-center justify-between">
+                            <span>How is this different from hiring a social media manager?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-caramel text-xs"></i>
+                        </h3>
+                        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                            A social media manager handles posting execution but rarely delivers foundational strategy or funnel architecture. The Growth Blueprint gives you the strategy, the system, and the AI tools — so you can either execute it yourself in under 3 hours a week or hand it to an SMM with a flawless brief.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="border border-brand-cashmere/80 rounded-xl bg-brand-cream p-5">
+                        <h3 class="font-bold text-base text-brand-deepForest flex items-center justify-between">
+                            <span>Do I need to already have a big following or email list?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-caramel text-xs"></i>
+                        </h3>
+                        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                            No. The Blueprint is designed to build the foundation from where you are right now. Whether you have 100 followers or 10,000, we start with your current baseline and build the system that grows it organically.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="border border-brand-cashmere/80 rounded-xl bg-brand-cream p-5">
+                        <h3 class="font-bold text-base text-brand-deepForest flex items-center justify-between">
+                            <span>What do I actually receive at delivery?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-caramel text-xs"></i>
+                        </h3>
+                        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                            You receive a complete package: Strategic Audit Document, 90-Day Game Plan, Quick Wins Implementation Checklist, 2 custom AI Workflow Prompt Tools, and a recorded video walkthrough — all delivered via Google Drive or email.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pricing & Call to Action Section -->
+        <section id="pricing" class="py-20 bg-brand-forest text-white relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                
+                <div class="bg-white text-gray-900 rounded-3xl p-8 sm:p-12 shadow-2xl border-4 border-brand-cashmere grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-flex items-center gap-2 bg-brand-lightBg border border-brand-cashmere text-brand-forest text-xs font-bold px-3 py-1 rounded-full uppercase">
+                            <i class="fa-solid fa-clock text-brand-caramel"></i> Founder Rate — Limited Cohort
+                        </div>
+                        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-deepForest">
+                            Build Your Marketing System Today
+                        </h2>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Get a full marketing department's worth of strategic output — audit, game plan, implementation, AI tools, and 2-week support — at a fraction of a single agency hour.
+                        </p>
+
+                        <div class="pt-2 space-y-2 text-xs font-semibold text-brand-deepForest">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-600"></i>
+                                <span>Deep Dive Strategic Audit (Profiles, Email, Funnel, GA4)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-600"></i>
+                                <span>90-Day Game Plan (Awareness, Nurture, Conversion)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-600"></i>
+                                <span>Quick Wins Implemented For You</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-600"></i>
+                                <span>2 Custom AI Prompts (Idea &amp; Report Generator)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-600"></i>
+                                <span>Recorded Video Walkthrough + 2 Weeks Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Card Box -->
+                    <div class="lg:col-span-5 bg-brand-cream border-2 border-brand-cashmere rounded-2xl p-6 text-center space-y-4 shadow-md">
+                        <span class="text-xs font-bold text-brand-tobacco uppercase tracking-widest block">FOUNDER PRICING</span>
+                        <div class="flex items-baseline justify-center gap-2">
+                            <span class="font-heading font-extrabold text-5xl text-brand-deepForest">$297</span>
+                            <span class="text-sm text-gray-400 line-through">$697</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">One-time investment. No recurring retainer required.</p>
+                        
+                        <button onclick="openModal()" class="w-full bg-brand-caramel hover:bg-[#b0782f] text-white font-bold text-base py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                            Get Your Growth Blueprint &rarr;
+                        </button>
+
+                        <p class="text-[10px] text-brand-tobacco font-medium">
+                            Follow-up within 24 hours to schedule your strategy call.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-deepForest text-brand-cashmere border-t border-brand-tobacco py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center justify-center sm:justify-start gap-2 mb-3">
+                    <div class="w-8 h-8 bg-brand-forest rounded flex items-center justify-center font-heading font-bold text-white text-base">D</div>
+                    <span class="font-heading font-bold text-lg text-white">DREA.M SERVICES</span>
+                </div>
+                <p class="text-xs text-brand-cashmere/80 font-accent italic text-base">
+                    "You can do anything. Not everything."
+                </p>
+                <p class="text-[11px] text-brand-cashmere/60 mt-2">
+                    Boutique AI-Native Fractional Marketing Firm.
+                </p>
+            </div>
+
+            <div class="text-xs space-y-2">
+                <h4 class="font-bold text-white uppercase tracking-wider mb-2">Direct Contact</h4>
+                <p><i class="fa-solid fa-envelope mr-1.5 text-brand-caramel"></i> dreawai.patrick@gmail.com</p>
+                <p><i class="fa-solid fa-globe mr-1.5 text-brand-caramel"></i> dreamservices-az.github.io</p>
+                <p><i class="fa-solid fa-location-dot mr-1.5 text-brand-caramel"></i> Yuma, Arizona | Serving Clients Nationally</p>
+            </div>
+
+            <div class="text-xs space-y-2 text-brand-cashmere/70">
+                <h4 class="font-bold text-white uppercase tracking-wider mb-2">Legal &amp; Policy</h4>
+                <p>&copy; 2026 DREA.M Services. All Rights Reserved.</p>
+                <p>Organic Conversion Engines &bull; Zero Paid Ads Required</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Intake Modal -->
+    <div id="intakeModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-cream border-2 border-brand-cashmere rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl font-bold">
+                &times;
+            </button>
+
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-bold tracking-widest text-brand-caramel uppercase">FOUNDER PRICING $297</span>
+                <h3 class="font-heading text-2xl font-bold text-brand-deepForest mt-1">Get Your Growth Blueprint</h3>
+                <p class="text-xs text-gray-600 mt-1">Complete this short form to reserve your spot. We'll follow up within 24 hours.</p>
+            </div>
+
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4 text-left">
+                <div>
+                    <label class="block text-xs font-bold text-brand-deepForest mb-1">Full Name *</label>
+                    <input type="text" required placeholder="e.g. Sarah Jenkins" class="w-full bg-white border border-brand-cashmere rounded-lg p-2.5 text-xs text-gray-900 focus:outline-none focus:border-brand-caramel">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-deepForest mb-1">Business Name &amp; Niche *</label>
+                    <input type="text" required placeholder="e.g. Apex Wellness Studio (Local Health Practitioner)" class="w-full bg-white border border-brand-cashmere rounded-lg p-2.5 text-xs text-gray-900 focus:outline-none focus:border-brand-caramel">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-deepForest mb-1">Email Address *</label>
+                    <input type="email" required placeholder="sarah@apexwellness.com" class="w-full bg-white border border-brand-cashmere rounded-lg p-2.5 text-xs text-gray-900 focus:outline-none focus:border-brand-caramel">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-deepForest mb-1">Primary Marketing Challenge *</label>
+                    <select required class="w-full bg-white border border-brand-cashmere rounded-lg p-2.5 text-xs text-gray-900 focus:outline-none focus:border-brand-caramel">
+                        <option value="">Select your main bottleneck...</option>
+                        <option value="Inconsistent posting / No time">Inconsistent posting / No time (&lt;3 hrs/wk)</option>
+                        <option value="Views don't turn into clients">Views don't turn into clients</option>
+                        <option value="Overwhelmed by AI & algorithms">Overwhelmed by AI &amp; algorithms</option>
+                        <option value="Need a complete marketing reset">Need a complete 30-day marketing reset</option>
+                    </select>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-brand-caramel hover:bg-[#b0782f] text-white font-bold text-sm py-3.5 rounded-xl shadow-lg transition">
+                        Submit Intake &amp; Reserve Spot ($297) &rarr;
+                    </button>
+                </div>
+
+                <p class="text-[10px] text-center text-gray-500">
+                    🔒 No immediate charge. We confirm intake fit and strategy call time first.
+                </p>
+            </form>
+
+            <div id="successMsg" class="hidden text-center py-8 space-y-3">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4 class="font-heading font-bold text-xl text-brand-deepForest">Intake Received!</h4>
+                <p class="text-xs text-gray-600">Thank you for submitting. We will review your details and email you within 24 hours to schedule your strategy call.</p>
+                <button onclick="closeModal()" class="mt-4 bg-brand-forest text-white text-xs font-bold px-6 py-2.5 rounded-lg">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        function openModal() {
+            document.getElementById('intakeModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('intakeModal').classList.add('hidden');
+            document.getElementById('successMsg').classList.add('hidden');
+            document.querySelector('#intakeModal form').classList.remove('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.querySelector('#intakeModal form').classList.add('hidden');
+            document.getElementById('successMsg').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
