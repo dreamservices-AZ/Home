@@ -1,0 +1,44 @@
+/* DREAM Marketing Services — Revised Brand Color Palette */
+:root {
+  /* Core brand colors */
+  --dream-primary: #3FBAC2;
+  --dream-ink: #154A4E;
+  --dream-raspberry: #C4275F;
+  --dream-clay: #A66A4E;
+  --dream-cream: #FBF6EF;
+  --dream-shell: #F0E4D8;
+
+  /* Semantic roles */
+  --color-primary: var(--dream-primary);
+  --color-text: var(--dream-ink);
+  --color-action: var(--dream-raspberry);
+  --color-accent: var(--dream-clay);
+  --color-background: var(--dream-cream);
+  --color-surface: var(--dream-shell);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-action);
+}
+
+button,
+.button,
+.btn,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  background-color: var(--color-action);
+  border-color: var(--color-action);
+  color: var(--color-background);
+}
+
+.card,
+.surface,
+.secondary-background {
+  background-color: var(--color-surface);
+}
