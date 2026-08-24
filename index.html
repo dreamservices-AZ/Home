@@ -45,13 +45,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --forest:    #2D5016;
-      --deep:      #1A3A0A;
-      --cashmere:  #E8D5B7;
-      --caramel:   #C68B3C;
-      --tobacco:   #7B4F2E;
-      --cream:     #FAF7F2;
-      --black:     #1C1C1C;
+      /* DREAM.M brand palette (see dream-brand-palette.css) */
+      --forest:    #154A4E; /* was dark green -> DREAM ink */
+      --deep:      #154A4E; /* was darker green -> DREAM ink */
+      --cashmere:  #F0E4D8; /* was tan -> DREAM shell */
+      --caramel:   #C4275F; /* was gold -> DREAM raspberry (action/accent) */
+      --tobacco:   #A66A4E; /* was brown -> DREAM clay */
+      --cream:     #FBF6EF; /* was off-white -> DREAM cream */
+      --black:     #154A4E; /* was near-black -> DREAM ink */
     }
 
     html { scroll-behavior: smooth; }
@@ -84,7 +85,7 @@
       cursor: pointer;
       transition: background 0.25s, transform 0.15s;
     }
-    .btn:hover { background: #a8722e; transform: translateY(-1px); }
+    .btn:hover { background: #A01F4D; transform: translateY(-1px); }
     .btn-outline {
       background: transparent;
       border: 2px solid var(--caramel);
@@ -105,7 +106,7 @@
       align-items: center;
       justify-content: space-between;
       height: 64px;
-      border-bottom: 1px solid rgba(232,213,183,0.15);
+      border-bottom: 1px solid rgba(240,228,216,0.15);
     }
     .nav-brand {
       font-family: 'Playfair Display', serif;
@@ -159,7 +160,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 60% 40%, rgba(45,80,22,0.06) 0%, transparent 70%);
+      background: radial-gradient(ellipse at 60% 40%, rgba(21,74,78,0.06) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-eyebrow {
@@ -179,7 +180,6 @@
       line-height: 1.05;
       margin-bottom: 28px;
     }
-    .hero-title span { color: var(--caramel); }
     .hero-tagline {
       font-size: clamp(1.4rem, 3.5vw, 2.2rem);
       font-weight: 300;
@@ -195,6 +195,19 @@
       margin-top: 20px;
       letter-spacing: 0.06em;
     }
+    .hero-body {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .hero-body p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--deep);
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+    .hero-body p:last-child { margin-bottom: 0; }
 
     /* ══════════════════════════════════════
        3. WHAT I DO
@@ -228,7 +241,7 @@
       flex: 1 1 260px;
       max-width: 320px;
       padding: 44px 32px;
-      border: 1px solid rgba(123,79,46,0.18);
+      border: 1px solid rgba(166,106,78,0.18);
       background: #fff;
       position: relative;
     }
@@ -294,7 +307,7 @@
     }
     .stat-box {
       background: #fff;
-      border: 1px solid rgba(123,79,46,0.2);
+      border: 1px solid rgba(166,106,78,0.2);
       padding: 36px 28px;
       flex: 1 1 180px;
       max-width: 220px;
@@ -373,7 +386,7 @@
       flex: 1 1 280px;
       max-width: 360px;
       background: #fff;
-      border: 1px solid rgba(123,79,46,0.15);
+      border: 1px solid rgba(166,106,78,0.15);
       padding: 48px 36px 40px;
       display: flex;
       flex-direction: column;
@@ -381,7 +394,7 @@
       text-align: left;
       transition: box-shadow 0.25s;
     }
-    .service-card:hover { box-shadow: 0 12px 40px rgba(26,58,10,0.12); }
+    .service-card:hover { box-shadow: 0 12px 40px rgba(21,74,78,0.12); }
     .service-card.popular {
       border: 2px solid var(--caramel);
       background: var(--deep);
@@ -408,7 +421,7 @@
       color: var(--tobacco);
       margin-bottom: 10px;
     }
-    .service-card.popular .service-tier { color: var(--caramel); }
+    .service-card.popular .service-tier { color: var(--cashmere); }
     .service-name {
       font-size: 1.6rem;
       color: var(--deep);
@@ -429,13 +442,14 @@
       opacity: 0.5;
       margin-bottom: 28px;
     }
+    .service-card.popular .service-price { color: var(--cashmere); }
     .service-card.popular .service-period { color: var(--cashmere); opacity: 0.6; }
     .service-divider {
       border: none;
-      border-top: 1px solid rgba(123,79,46,0.18);
+      border-top: 1px solid rgba(166,106,78,0.18);
       margin-bottom: 24px;
     }
-    .service-card.popular .service-divider { border-color: rgba(232,213,183,0.25); }
+    .service-card.popular .service-divider { border-color: rgba(240,228,216,0.25); }
     .service-features {
       list-style: none;
       flex: 1;
@@ -489,7 +503,7 @@
       flex-wrap: wrap;
       margin-top: 52px;
       padding-top: 40px;
-      border-top: 1px solid rgba(232,213,183,0.2);
+      border-top: 1px solid rgba(240,228,216,0.2);
     }
     .about-stat { text-align: center; }
     .about-stat-num {
@@ -510,114 +524,53 @@
     }
 
     /* ══════════════════════════════════════
-       7. TESTIMONIAL
+       7. GET STARTED
     ══════════════════════════════════════ */
-    #testimonial {
+    #get-started {
       background: var(--cashmere);
-      padding: 90px 5%;
+      padding: 100px 5%;
       text-align: center;
     }
-    .testimonial-inner {
+    .get-started-inner {
       max-width: 640px;
       margin: 0 auto;
     }
-    .quote-marks {
-      font-family: 'Playfair Display', serif;
-      font-size: 8rem;
-      color: var(--tobacco);
-      opacity: 0.25;
-      line-height: 0.6;
-      display: block;
-      margin-bottom: 32px;
-    }
-    .testimonial-text {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: clamp(1.3rem, 2.8vw, 1.8rem);
+    .get-started-intro {
+      font-size: 1.05rem;
       color: var(--deep);
-      line-height: 1.65;
-      margin-bottom: 28px;
-      font-weight: 300;
+      opacity: 0.9;
+      line-height: 1.8;
+      margin-bottom: 40px;
     }
-    .testimonial-placeholder {
-      display: inline-block;
-      background: rgba(123,79,46,0.12);
-      border: 1px dashed var(--tobacco);
-      padding: 8px 24px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--tobacco);
-    }
-
-    /* ══════════════════════════════════════
-       8. CONTACT
-    ══════════════════════════════════════ */
-    #contact {
-      background: var(--cream);
-      padding: 100px 5%;
-    }
-    .contact-inner {
-      max-width: 680px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    #contact .section-title { color: var(--deep); margin-bottom: 12px; }
-    #contact .section-sub {
-      font-size: 0.95rem;
-      color: var(--black);
-      opacity: 0.6;
-      margin-bottom: 52px;
-    }
-    .contact-form {
+    .get-started-list {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 22px;
       text-align: left;
+      margin: 0 auto 48px;
+      max-width: 480px;
     }
-    .form-row {
+    .get-started-item {
       display: flex;
-      gap: 16px;
+      align-items: flex-start;
+      gap: 14px;
     }
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-    .form-group label {
-      font-size: 0.72rem;
+    .get-started-check {
+      color: var(--caramel);
       font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--tobacco);
-      margin-bottom: 6px;
+      font-size: 1.1rem;
+      margin-top: 2px;
     }
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.92rem;
-      color: var(--black);
-      background: #fff;
-      border: 1px solid rgba(123,79,46,0.25);
-      padding: 13px 16px;
-      outline: none;
-      transition: border-color 0.2s;
-      -webkit-appearance: none;
-      appearance: none;
+    .get-started-item-title {
+      color: var(--deep);
+      font-weight: 700;
+      margin-bottom: 2px;
     }
-    .form-group select {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M6 8L0 0h12z' fill='%237B4F2E'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 16px center;
-      padding-right: 40px;
+    .get-started-item-desc {
+      color: var(--deep);
+      opacity: 0.7;
+      font-size: 0.9rem;
     }
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus { border-color: var(--caramel); }
-    .form-group textarea { min-height: 130px; resize: vertical; }
-    .contact-form .btn { align-self: center; padding: 16px 56px; font-size: 0.88rem; margin-top: 8px; }
 
     /* ══════════════════════════════════════
        9. FOOTER
@@ -657,72 +610,23 @@
     }
     .footer-contact a { color: var(--cashmere); opacity: 0.75; text-decoration: none; }
     .footer-contact a:hover { opacity: 1; }
+    .footer-direct-contact {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--cashmere);
+      opacity: 0.7;
+      padding-top: 32px;
+    }
+    .footer-direct-contact a { color: var(--cashmere); text-decoration: underline; }
+    .footer-direct-contact a:hover { opacity: 1; }
     .footer-bottom {
-      border-top: 1px solid rgba(232,213,183,0.12);
+      border-top: 1px solid rgba(240,228,216,0.12);
       padding: 18px 0;
       font-size: 0.75rem;
       color: var(--cashmere);
       opacity: 0.5;
       text-align: center;
       letter-spacing: 0.06em;
-    }
-
-    /* ══════════════════════════════════════
-       8. BLOG
-    ══════════════════════════════════════ */
-    #blog {
-      background: var(--cream);
-      padding: 100px 5%;
-      text-align: center;
-    }
-    #blog .section-title { color: var(--deep); margin-bottom: 56px; }
-    .blog-grid {
-      display: flex;
-      gap: 32px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .blog-card {
-      flex: 1 1 300px;
-      max-width: 420px;
-      background: #fff;
-      border: 1px solid rgba(123,79,46,0.15);
-      padding: 40px 36px;
-      text-align: left;
-      position: relative;
-      transition: box-shadow 0.25s;
-    }
-    .blog-card:hover { box-shadow: 0 12px 40px rgba(26,58,10,0.1); }
-    .blog-tag {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--caramel);
-      border: 1px solid var(--caramel);
-      padding: 4px 14px;
-      margin-bottom: 20px;
-    }
-    .blog-card-title {
-      font-size: 1.4rem;
-      color: var(--deep);
-      margin-bottom: 12px;
-    }
-    .blog-card-excerpt {
-      font-size: 0.9rem;
-      color: var(--black);
-      opacity: 0.7;
-      line-height: 1.75;
-      margin-bottom: 24px;
-    }
-    .blog-card-date {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--tobacco);
-      opacity: 0.7;
     }
 
     /* ══════════════════════════════════════
@@ -741,7 +645,7 @@
       nav { padding: 0 4%; }
       .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 64px; left: 0; right: 0; background: var(--forest); padding: 8px 0 20px; border-bottom: 2px solid var(--tobacco); }
       .nav-links.open { display: flex; }
-      .nav-links li { padding: 10px 5%; border-bottom: 1px solid rgba(232,213,183,0.08); }
+      .nav-links li { padding: 10px 5%; border-bottom: 1px solid rgba(240,228,216,0.08); }
       .nav-toggle { display: flex; }
 
       #hero { min-height: 80vh; padding: 60px 6%; }
@@ -781,17 +685,20 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#free-guide">Free Guide</a></li>            <li><a href="#contact">Contact</a></li>
+      <li><a href="#get-started">Free Starter Kit</a></li>
     </ul>
   </nav>
 
   <!-- ══ 2. HERO ══ -->
   <section id="hero">
-    <p class="hero-eyebrow">Boutique Marketing Services</p>
-    <h1 class="hero-title">DREAM<span>.</span>Marketing<br>Services</h1>
+    <p class="hero-eyebrow">Marketing Without the Overwhelm for Small Business Owners</p>
+    <h1 class="hero-title">DREAM Marketing<br>Services</h1>
     <p class="hero-tagline tagline">You can do anything. Not everything.</p>
-    <button class="btn" onclick="window.open('https://preview.mailerlite.io/forms/2482060/191746801209967883/share', '_blank')">Download Free Starter Kit</button>
+    <div class="hero-body">
+      <p>DREAM Marketing is a practical marketing systems partner for small-business owners who are tired of posting without a plan. We combine viral content formats rooted in sales psychology, strategic copywriting, simple workflows, and flexible support to help businesses turn attention into trust, leads, and sales.</p>
+      <p>Whether a business owner wants to learn the system, get help implementing it, or bring in strategic marketing leadership, DREAM Marketing meets them where they are&mdash;because they can do anything, but they should not have to do everything.</p>
+      <p>You do not need to be everywhere, post every day, or become a full-time marketer to grow your business. You need a clear system that tells you what to say, why it matters to buyers, and what happens next. DREAM Marketing helps you create that system&mdash;or brings the support to run it for you.</p>
+    </div>
     <p class="hero-sub">Strategy &middot; Content &middot; Conversion &middot; Zero Paid Ads</p>
   </section>
 
@@ -876,8 +783,7 @@
           <li>Brand voice development</li>
           <li>Post scheduling &amp; publishing</li>
         </ul>
-        <a href= "mailto:rea@dreammarketingservices.us"class="btn btn-outline"> Contact Me
-</a>
+        <a href="mailto:rea@dreammarketingservices.us?subject=Starter%20Inquiry" class="btn btn-outline">Contact Me</a>
       </div>
 
       <div class="service-card">
@@ -893,8 +799,7 @@
           <li>Conversion optimization</li>
           <li>Content calendar</li>
         </ul>
-        <a href="mailto:rea@dreammarketingservices.us"class="btn btn-outline"> Contact Me
-</a>
+        <a href="mailto:rea@dreammarketingservices.us?subject=Growth%20Inquiry" class="btn btn-outline">Contact Me</a>
       </div>
 
       <div class="service-card">
@@ -909,8 +814,7 @@
           <li>Quarterly planning sessions</li>
           <li>Full AI operating system</li>
         </ul>
-        <a href= "mailto:rea@dreammarketingservices.us"class="btn btn-outline"> Contact Me
-</a>
+        <a href="mailto:rea@dreammarketingservices.us?subject=Director%20Inquiry" class="btn btn-outline">Contact Me</a>
       </div>
 
     </div>
@@ -942,86 +846,50 @@
     </div>
   </section>
 
-  <!-- ══ 7. TESTIMONIAL ══ -->
-  <section id="testimonial">
-    <div class="testimonial-inner">
-      <span class="quote-marks">&ldquo;</span>
-      <p class="testimonial-text">Client results and testimonial coming soon.</p>
-      <span class="testimonial-placeholder">Results in Progress</span>
-    </div>
-  </section>
-
-  <!-- ══ 8. BLOG ══ -->
-  <section id="blog">
-    <p class="section-label">Insights</p>
-    <h2 class="section-title">From the Blog</h2>
-<div class="blog-grid">
-        <div class="blog-card">
-          <div class="blog-tag">Strategy</div>
-          <h3 class="blog-card-title">The Real Reason Your Followers Aren't Buying (Hint: It's Not the Algorithm)</h3>
-          <p class="blog-card-excerpt">Posting more isn't a strategy. Here's why your content isn't converting scrollers into paying clients — and the system that fixes it.</p>
-          <span class="blog-card-date">DREAM Marketing Services · July 2026</span>
-          <br><br>
-          <a href="followers-not-buying.html" class="btn btn-outline" style="font-size:0.75rem; padding:10px 24px;">Read Article</a>
+  <!-- ══ 7. GET STARTED ══ -->
+  <section id="get-started">
+    <div class="get-started-inner">
+      <p class="section-label">Free Resource</p>
+      <h2 class="section-title">Want Results Like the Ones Above?</h2>
+      <p class="get-started-intro">Every number on this page started with one system, not a bigger budget. The Social Media Starter Kit gives you the same starting framework, free:</p>
+      <div class="get-started-list">
+        <div class="get-started-item">
+          <span class="get-started-check">&#10003;</span>
+          <div>
+            <p class="get-started-item-title">The Growth-Killing Mistakes Guide</p>
+            <p class="get-started-item-desc">The five most common posting mistakes that quietly stall growth, and how to fix them.</p>
+          </div>
         </div>
-        <div class="blog-card">
-          <div class="blog-tag">Marketing Strategy &amp; Analytics</div>
-          <h3 class="blog-card-title">Why Your Social Media Isn&rsquo;t Converting (And What to Track Instead)</h3>
-          <p class="blog-card-excerpt">If you&rsquo;re posting consistently but seeing zero impact on your bottom line, you&rsquo;re experiencing the Engagement-to-Revenue Disconnect. Here are the 5 KPIs that actually matter.</p>
-          <span class="blog-card-date">DREAM Marketing Services &middot; July 2026</span>
-          <br><br>
-          <a href="why-your-social-media-isnt-converting.html" class="btn btn-outline" style="font-size:0.75rem; padding:10px 24px;">Read Article</a>
+        <div class="get-started-item">
+          <span class="get-started-check">&#10003;</span>
+          <div>
+            <p class="get-started-item-title">The 30-Day Content Calendar</p>
+            <p class="get-started-item-desc">A ready-to-use plan so you're never staring at a blank page wondering what to post.</p>
+          </div>
+        </div>
+        <div class="get-started-item">
+          <span class="get-started-check">&#10003;</span>
+          <div>
+            <p class="get-started-item-title">The KPI Tracking Guide</p>
+            <p class="get-started-item-desc">The handful of numbers that actually predict revenue, not just likes.</p>
+          </div>
+        </div>
+        <div class="get-started-item">
+          <span class="get-started-check">&#10003;</span>
+          <div>
+            <p class="get-started-item-title">Posting Timing Recommendations</p>
+            <p class="get-started-item-desc">When your audience is actually paying attention, so effort doesn't go to waste.</p>
+          </div>
+        </div>
+        <div class="get-started-item">
+          <span class="get-started-check">&#10003;</span>
+          <div>
+            <p class="get-started-item-title">The Caption Hook Formula</p>
+            <p class="get-started-item-desc">A repeatable structure for captions that stop the scroll and drive action.</p>
+          </div>
         </div>
       </div>
-  </section>
-
-    <!-- == 9. FREE GUIDE == -->
-    <section id="free-guide" style="background: var(--forest); padding: 100px 5%;">
-          <div style="max-width: 860px; margin: 0 auto; text-align: center;">
-                  <p class="section-label" style="color: var(--cashmere);">Free Resource</p>
-                  <h2 class="section-title" style="color: var(--cream); margin-bottom: 20px;">The Architect&rsquo;s Guide to Persuasive Copy</h2>
-                  <p style="font-size: 1.05rem; color: var(--cashmere); opacity: 0.9; max-width: 600px; margin: 0 auto 48px; line-height: 1.8;">Stop guessing at marketing. This free guide gives you 4 battle-tested copywriting frameworks that move readers from scroll to sale &mdash; built for small business owners who want results, not theory.</p>
-                  <div style="display: inline-grid; grid-template-columns: 1fr 1fr; gap: 16px 40px; text-align: left; margin-bottom: 56px;">
-                            <div style="display: flex; align-items: flex-start; gap: 12px;">
-                                        <span style="color: var(--caramel); font-weight: 700; font-size: 1.1rem; margin-top: 2px;">&#10003;</span>
-                                        <div>
-                                                      <p style="color: var(--cream); font-weight: 700; margin-bottom: 2px;">AIDA Framework</p>
-                                                      <p style="color: var(--cashmere); font-size: 0.9rem; opacity: 0.85;">The sequential psychology of attention that mirrors how humans actually decide to buy.</p>
-                                                    </div>
-                                      </div>
-                            <div style="display: flex; align-items: flex-start; gap: 12px;">
-                                        <span style="color: var(--caramel); font-weight: 700; font-size: 1.1rem; margin-top: 2px;">&#10003;</span>
-                                        <div>
-                                                      <p style="color: var(--cream); font-weight: 700; margin-bottom: 2px;">PAS Framework</p>
-                                                      <p style="color: var(--cashmere); font-size: 0.9rem; opacity: 0.85;">Solve frustrations through emotional intensity &mdash; the most powerful tool for pain-point marketing.</p>
-                                                    </div>
-                                      </div>
-                            <div style="display: flex; align-items: flex-start; gap: 12px;">
-                                        <span style="color: var(--caramel); font-weight: 700; font-size: 1.1rem; margin-top: 2px;">&#10003;</span>
-                                        <div>
-                                                      <p style="color: var(--cream); font-weight: 700; margin-bottom: 2px;">SCQA Framework</p>
-                                                      <p style="color: var(--cashmere); font-size: 0.9rem; opacity: 0.85;">Narrative logic for strategic storytelling &mdash; ideal for newsletters, white papers, and LinkedIn.</p>
-                                                    </div>
-                                      </div>
-                            <div style="display: flex; align-items: flex-start; gap: 12px;">
-                                        <span style="color: var(--caramel); font-weight: 700; font-size: 1.1rem; margin-top: 2px;">&#10003;</span>
-                                        <div>
-                                                      <p style="color: var(--cream); font-weight: 700; margin-bottom: 2px;">FAB Framework</p>
-                                                      <p style="color: var(--cashmere); font-size: 0.9rem; opacity: 0.85;">Translate features into human impact &mdash; build trust with straight-talking business owners.</p>
-                                                    </div>
-                                      </div>
-                          </div>
-                  <a href="https://preview.mailerlite.io/forms/2482060/191930069356119799/share" target="_blank" class="btn" style="font-size: 0.9rem; padding: 16px 40px;">Get the Free Guide &rarr;</a>
-                </div>
-        </section>
-  <!-- ══ 9. CONTACT ══ -->
-  <section id="contact">
-    <div class="contact-inner">
-      <p class="section-label">Get In Touch</p>
-      <h2 class="section-title">Let's Talk</h2>
-      <p class="section-sub">Click the button below to send me an email directly — I'll get back to you within 24 hours.</p>
-
-      <a href="mailto:rea@dreammarketingservices.us" class="btn btn-outline">Contact Me</a>
+      <a href="https://dream-marketing-services-kit.subscribepage.io" target="_blank" class="btn" style="font-size:0.9rem; padding:16px 40px;">Download the Free Starter Kit &rarr;</a>
     </div>
   </section>
 
@@ -1033,34 +901,13 @@
       <div class="footer-contact">
         <a href="https://dreammarketingservices.us/growth-blueprint.html" class="btn btn-outline">Start Closing More Sales</a>      </div>
     </div>
+    <p class="footer-direct-contact">Prefer to talk first? <a href="mailto:rea@dreammarketingservices.us">Email me directly</a>.</p>
     <div class="footer-bottom">
       &copy; 2026 DREAM Marketing Services &nbsp;&mdash;&nbsp; AZ &nbsp;&mdash;&nbsp; Serving clients nationwide
     </div>
   </footer>
 
-  <!-- ══ KLAVIYO MODAL ══ -->
-  <div id="klaviyoModal" style="display:none; position:fixed; inset:0; background:rgba(26,58,10,0.75); z-index:1000; align-items:center; justify-content:center; padding:20px;">
-    <div style="background:#FAF7F2; max-width:480px; width:100%; padding:48px 40px 40px; position:relative;">
-      <button onclick="document.getElementById('klaviyoModal').style.display='none'" style="position:absolute; top:14px; right:18px; background:none; border:none; font-size:1.4rem; cursor:pointer; color:#7B4F2E; line-height:1;">&times;</button>
-      <p style="font-family:'Lato',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#7B4F2E; margin-bottom:10px;">Free Resource</p>
-      <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; color:#1A3A0A; margin-bottom:10px;">The Social Media Starter Kit</h3>
-      <p style="font-family:'Lato',sans-serif; font-size:0.9rem; color:#1C1C1C; opacity:0.7; margin-bottom:24px;">Enter your email below and I'll send it straight to your inbox.</p>
-      <div class="klaviyo-form-Uqms9L"></div>
-    </div>
-  </div>
-
-  <!-- Klaviyo script -->
-  <script async type='text/javascript' src='https://static.klaviyo.com/onsite/js/WUrCCg/klaviyo.js?company_id=WUrCCg'></script>
-  <script type="text/javascript">
-    !function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();
-  </script>
-
   <script>
-    // Close modal when clicking outside the box
-    document.getElementById('klaviyoModal').addEventListener('click', function(e) {
-      if (e.target === this) this.style.display = 'none';
-    });
-
     // Mobile nav toggle
     const toggle = document.getElementById('navToggle');
     const links  = document.getElementById('navLinks');
@@ -1080,7 +927,7 @@
       e.preventDefault();
       const btn = e.target.querySelector('button[type="submit"]');
       btn.textContent = 'Message Sent!';
-      btn.style.background = '#2D5016';
+      btn.style.background = '#154A4E';
       btn.disabled = true;
       setTimeout(() => {
         btn.textContent = "Let's Talk";
